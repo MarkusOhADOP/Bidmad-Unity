@@ -29,7 +29,7 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
     ![Bidmad-Guide-3](https://i.imgur.com/xPuJaSC.png)<br>
 3. Assets → External Dependency Manager → iOS Resolver → Settings 경로를 통해 세팅을 열어주십시오.<br>
     ![Bidmad-Guide-4](https://i.imgur.com/8cvpZR0.png)<br>
-    Setting 패널에서 Link Frameworks Statically 를 체크해주십시오.<br>
+    Setting 패널에서 <strong>Link Frameworks Statically</strong> 를 체크해주십시오.<br>
 4. iOS Xcode 프로젝트를 빌드한 이후, iOS 프로젝트 폴더에서 <strong>.xcworkspace</strong> 확장자의 파일을 열어주십시오.<br>
 5. [App Tracking Transparency Guide](https://github.com/bidmad/Bidmad-Unity/wiki/Preparing-for-iOS-14%5BKOR%5D)에 따라 앱 추적 투명성 승인 요청 팝업을 적용시켜주십시오. SKAdNetwork 리스트는 BidmadPostProcessBuild.cs 파일에 포함되어있습니다.<br>
 
@@ -154,14 +154,15 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
 - 보상형 전면 광고를 요청하기 위해 BidmadRewardInterstitial을 생성합니다.
 ```cpp
 static BidmadRewardInterstitial rewardInterstitial;
+
 public void LoadRewardInterstitialAd()
 {
 #if UNITY_ANDROID
     if (rewardInterstitial == null)
-        rewardInterstitial = new BidmadRewardInterstitial("a7ff876e-b665-4b81-afac-a7de41127ed1");
+        rewardInterstitial = new BidmadRewardInterstitial("YOUR-ANDROID-ZONE-ID");
 #elif UNITY_IOS
     if (rewardInterstitial == null)
-        rewardInterstitial = new BidmadRewardInterstitial("29e1ef67-98d2-47b3-9fa2-9192327dd75d");
+        rewardInterstitial = new BidmadRewardInterstitial("YOUR-IOS-ZONE-ID");
 #endif
     rewardInterstitial.load();
 

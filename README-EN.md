@@ -156,10 +156,10 @@ public void LoadRewardInterstitialAd()
 {
 #if UNITY_ANDROID
     if (rewardInterstitial == null)
-        rewardInterstitial = new BidmadRewardInterstitial("a7ff876e-b665-4b81-afac-a7de41127ed1");
+        rewardInterstitial = new BidmadRewardInterstitial("YOUR-ANDROID-ZONE-ID");
 #elif UNITY_IOS
     if (rewardInterstitial == null)
-        rewardInterstitial = new BidmadRewardInterstitial("29e1ef67-98d2-47b3-9fa2-9192327dd75d");
+        rewardInterstitial = new BidmadRewardInterstitial("YOUR-IOS-ZONE-ID");
 #endif
     rewardInterstitial.load();
 
