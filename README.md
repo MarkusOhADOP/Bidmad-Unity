@@ -23,18 +23,14 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
 #### 1.2 iOS
 
 1. 다운로드 받은 최신 버전 SDK를 프로젝트에 Import합니다. <br>
-    ![Bidmad-Guide-1](https://imgur.com/5VUBMsk)<br>
-2. BidmadPostProcessBuild.cs 파일을 수정합니다.<br>
-    ![Bidmad-Guide-2](https://imgur.com/hWyCOUF)<br>
+2. Assets → Bidmad → Editor → BidmadPostProcessBuild.cs 파일을 수정합니다.<br>
     User Tracking Usage Description 과 Google App ID 를 변경해주십시오. 
     ( GADApplicationIdentifier는 구글 애드몹에서 확인하실 수 있습니다 )<br>
-    ![Bidmad-Guide-3](https://imgur.com/xPuJaSC)<br>
-3. Assets - External Dependency Manager - iOS Resolver - Settings 경로를 통해 세팅을 열어주십시오.<br>
-    ![Bidmad-Guide-4](https://imgur.com/8cvpZR0)<br>
-    아래 사진과 같이 Link Frameworks Statically 를 체크해주십시오.<br>
-    ![Bidmad-Guide-5](https://imgur.com/k6o0iWq)<br>
+    ![Bidmad-Guide-3](https://i.imgur.com/xPuJaSC.png)<br>
+3. Assets → External Dependency Manager → iOS Resolver → Settings 경로를 통해 세팅을 열어주십시오.<br>
+    ![Bidmad-Guide-4](https://i.imgur.com/8cvpZR0.png)<br>
+    Setting 패널에서 Link Frameworks Statically 를 체크해주십시오.<br>
 4. iOS Xcode 프로젝트를 빌드한 이후, iOS 프로젝트 폴더에서 <strong>.xcworkspace</strong> 확장자의 파일을 열어주십시오.<br>
-    ![Bidmad-Guide-6](https://imgur.com/1XESLq0)<br>
 5. [App Tracking Transparency Guide](https://github.com/bidmad/Bidmad-Unity/wiki/Preparing-for-iOS-14%5BKOR%5D)에 따라 앱 추적 투명성 승인 요청 팝업을 적용시켜주십시오. SKAdNetwork 리스트는 BidmadPostProcessBuild.cs 파일에 포함되어있습니다.<br>
 
 *Apple Store에서 요구하는 개인정보 보호에 관한 가이드가 필요한 경우 [이곳](https://github.com/bidmad/Bidmad-Unity/wiki/Apple-privacy-survey%5BKOR%5D)을 참고하세요.
@@ -42,11 +38,8 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
 #### 1.3 iOS Migration Guide ( 2.8.1 혹은 이전 버전에서 2.9.0 이상 버전으로 업데이트 할 경우 )
 
 1. Assets → Plugins → iOS → Bidmad 폴더 및 내부 파일 전체를 삭제하십시오
-    ![Bidmad-Migration-Guide-1](https://imgur.com/l3iycd4)
 2. Assets → Resources → Bidmad 폴더 및 내부 파일 전체를 삭제하십시오.
-    ![Bidmad-Migration-Guide-2](https://imgur.com/t1AmgXj)
 3. Assets → Bidmad → Scripts 폴더 및 내부 파일 전체를 삭제하십시오.
-    ![Bidmad-Migration-Guide-3](https://imgur.com/I7BrCNg)
 3. info.plist 내부 SKAdNetwork, Google App ID, User Tracking Usage Description 세팅 모두 BidmadPostProcessBuild.cs 파일로 옮겨졌습니다 (1.2 iOS 빌드가이드 2번 참고).
     이전에 info.plist에 설정하셨던 Google App ID / User Tracking Usage Description을 BidmadPostProcessBuild.cs 파일로 이전시켜주십시오. SKAdNetwork는 옮기실 필요가 없으며, BidmadPostProcessBuild에 App ID / User Tracking Usage Description 세팅 후 저장한 뒤에는, 추가로 info.plist 세팅을 할 부분이 없습니다.
 4. 이후 위 1.2 iOS 빌드 가이드를 따라 해주시면 되겠습니다. 
@@ -410,7 +403,25 @@ public void setRewardCompleteCallback(Action callback)|Action을 등록했다면
 public void setRewardSkipCallback(Action callback)|Action을 등록했다면 보상형광고의 리워드 지급기준에 미달 했을 때 등록한 Action을 실행합니다.
 public void setRewardCloseCallback(Action callback)|Action을 등록했다면 보상형광고를 Close 했을 때 등록한 Action을 실행합니다.
 
-#### 4.4 iOS14 앱 추적 투명성 승인 요청
+#### 4.4 보상형 전면
+
+*보상형 전면 광고는 BidmadRewardInterstitial를 통해 처리되며 이를 위한 함수 목록입니다.
+
+Function|Description
+---|---
+public BidmadRewardInterstitial(string zoneId)|BidmadRewardInterstitial 생성자, ZoneId를 설정합니다.
+public void setUserId(string userId)|서버측 인증이 필요한 경우 호출합니다. 일부 네트워크에서만 동작하며, 사용이 필요한 경우 문의 바랍니다. (Android Only)
+public void load()|생성자에서 입력한 ZoneId로 광고를 요청합니다.
+public void show()|Load한 광고를 노출 시킵니다.
+public bool isLoaded()|광고가 Load된 상태인지 체크합니다.
+public void setRewardInterstitialLoadCallback(Action callback)|Action을 등록했다면 보상형 전면광고를 Load 했을 때 등록한 Action을 실행합니다.
+public void setRewardInterstitialShowCallback(Action callback)|Action을 등록했다면 보상형 전면광고를 Show 했을 때 등록한 Action을 실행합니다.
+public void setRewardInterstitialFailCallback(Action callback)|Action을 등록했다면 ZoneId를 통한 보상형 전면 광고 Load가 실패 했을 때 등록한 Action을 실행합니다.
+public void setRewardInterstitialCompleteCallback(Action callback)|Action을 등록했다면 보상형 전면광고의 리워드 지급기준을 충족 했을 때 등록한 Action을 실행합니다.
+public void setRewardInterstitialSkipCallback(Action callback)|Action을 등록했다면 보상형 전면광고의 리워드 지급기준에 미달 했을 때 등록한 Action을 실행합니다.
+public void setRewardInterstitialCloseCallback(Action callback)|Action을 등록했다면 보상형 전면 광고를 Close 했을 때 등록한 Action을 실행합니다.
+
+#### 4.5 iOS14 앱 추적 투명성 승인 요청
 
 *앱 추적 투명성 승인 요청에 관한 함수는 BidmadCommon을 통해 제공됩니다.
 

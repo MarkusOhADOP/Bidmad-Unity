@@ -23,18 +23,14 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
 #### 1.2 iOS
 
 1. Please import the latest plugin.<br>
-    ![Bidmad-Guide-1](https://imgur.com/5VUBMsk)<br>
-2. Please make adjustments to BidmadPostProcessBuild.cs.<br>
-    ![Bidmad-Guide-2](https://imgur.com/hWyCOUF)<br>
+2. Please make adjustments to BidmadPostProcessBuild.cs file in Assets → Bidmad → Editor.<br>
     Make sure to change User Tracking Usage Description and Google App ID. 
     ( GADApplicationIdentifier can be found in the Google Admob website )<br>
-    ![Bidmad-Guide-3](https://imgur.com/xPuJaSC)<br>
+    ![Bidmad-Guide-3](https://i.imgur.com/xPuJaSC.png)<br>
 3. Please open the settings panel from Assets - External Dependency Manager - iOS Resolver - Settings.<br>
-    ![Bidmad-Guide-4](https://imgur.com/8cvpZR0)<br>
-    Please check on Link Frameworks Statically.<br>
-    ![Bidmad-Guide-5](https://imgur.com/k6o0iWq)<br>
+    ![Bidmad-Guide-4](https://i.imgur.com/8cvpZR0.png)<br>
+    Please check on <strong>Link Frameworks Statically</strong> inside the settings panel.<br>
 4. After building iOS Xcode Project, iOS Xcode Project folder will contain a project file with <strong>.xcworkspace</strong> extension. Please open it. <br>
-    ![Bidmad-Guide-6](https://imgur.com/1XESLq0)<br>
 5. Follow the [guide](https://github.com/bidmad/Bidmad-Unity/wiki/Preparing-for-iOS-14%5BENG%5D) to apply app tracking transparency approval request pop-up. SKAdNetwork lists are included in BidmadPostProcessBuild.cs file.<br>
 
 *If you're looking for a guide to the privacy requirements of the Apple Store, [see here](https://github.com/bidmad/Bidmad-Unity/wiki/Apple-privacy-survey%5BENG%5D).
@@ -42,11 +38,8 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
 #### 1.3 iOS Migration Guide ( For Users migrating from 2.8.1 or under to the latest plugin )
 
 1. Delete Assets → Plugins → iOS → Bidmad
-    ![Bidmad-Migration-Guide-1](https://imgur.com/l3iycd4)
 2. Delete Assets → Resources → Bidmad
-    ![Bidmad-Migration-Guide-2](https://imgur.com/t1AmgXj)
 3. Delete Assets → Bidmad → Scripts
-    ![Bidmad-Migration-Guide-3](https://imgur.com/I7BrCNg)
 4. SKAdNetwork, Google App ID, User Tracking Usage Description Settings, which previously were set inside info.plist, are all moved to BidmadPostProcessBuild.cs (Please refer to the second step of 1.2 iOS Build Guide). Please set your App ID and User Tracking Usage Description in BidmadPostProcessBuild.cs file. It is not necessary for you to set SKAdNetwork as BidmadPostProcess is pre-set with needed SKAdNetworks. After setting and saving BidmadPostProcessBuild, there is no need for you to additionally set the info.plist. 
 4. After following the steps above, please follow the steps in the section 1.2 iOS Build Guide.
 
@@ -407,6 +400,24 @@ public void setRewardFailCallback(Action callback)|If an Action is registered, t
 public void setRewardCompleteCallback(Action callback)|If an Action is registered, the registered Action is executed when the reward payment criteria of the reward ad are met.
 public void setRewardSkipCallback(Action callback)|If an Action is registered, the registered Action is executed when the reward payment standard of the reward ad is not met.
 public void setRewardCloseCallback(Action callback)|If an action is registered, the registered action is executed when the reward ad is closed.
+
+#### 4.3 Reward Interstitial
+
+*Reward Interstitial ads are processed through BidmadRewardInterstitial, and this is a list of functions for this.
+
+Function|Description
+---|---
+public BidmadRewardInterstitial(string zoneId)|This is the BidmadRewardInterstitial constructor, Set the ZoneId
+public void setUserId(string userId)|Called when server-side verification is required. It only works on some networks, and if you need to use it, please contact us. (Android Only)
+public void load()|Request an ad with the ZoneId entered in the constructor.
+public void show()|Display the loaded advertisement.
+public bool isLoaded()|Check if the ad is loaded.
+public void setRewardInterstitialLoadCallback(Action callback)|If an action is registered, the registered action is executed when the reward Interstitial ad is loaded.
+public void setRewardInterstitialShowCallback(Action callback)|If an action is registered, the registered action is executed when the reward Interstitial ad is shown.
+public void setRewardInterstitialFailCallback(Action callback)|If an Action is registered, the registered Action is executed when Reward Interstitil ad loading fails.
+public void setRewardInterstitialCompleteCallback(Action callback)|If an Action is registered, the registered Action is executed when the criteria for reward is met for the Reward Interstitial.
+public void setRewardInterstitialSkipCallback(Action callback|If an Action is registered, the registered Action is executed when the cirteria for reward is not met.
+public void setRewardInterstitialCloseCallback(Action callback)|If an action is registered, the registered action is executed when the reward interstitial ad is closed.
 
 #### 4.4 iOS14 AppTrackingTransparencyAuthorization
 
