@@ -33,7 +33,7 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
     ![Bidmad-Guide-4](https://imgur.com/8cvpZR0)<br>
     아래 사진과 같이 Link Frameworks Statically 를 체크해주십시오.<br>
     ![Bidmad-Guide-5](https://imgur.com/k6o0iWq)<br>
-4. iOS Xcode 프로젝트를 빌드한 이후, iOS 프로젝트 폴더에서 <strong>.xcworkspace<strong> 확장자의 파일을 열어주십시오.<br>
+4. iOS Xcode 프로젝트를 빌드한 이후, iOS 프로젝트 폴더에서 <strong>.xcworkspace</strong> 확장자의 파일을 열어주십시오.<br>
     ![Bidmad-Guide-6](https://imgur.com/1XESLq0)<br>
 5. [App Tracking Transparency Guide](https://github.com/bidmad/Bidmad-Unity/wiki/Preparing-for-iOS-14%5BKOR%5D)에 따라 앱 추적 투명성 승인 요청 팝업을 적용시켜주십시오. SKAdNetwork 리스트는 BidmadPostProcessBuild.cs 파일에 포함되어있습니다.<br>
 
