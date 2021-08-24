@@ -22,39 +22,8 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
 
 #### 1.2 iOS
 
-1. Import the latest downloaded SDK to the project.<br>
-2. Change the settings in the project's Build Settings.<br>
-- Set Enable BitCode = No<br>
-- Add Other Linker Flags = -ObjC<br>
-3. Add GADApplicationIdentifier to info.plist.<br>
-*GADApplicationIdentifier can be found in Google Admob.
-```
-    <key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-XXXXXX~XXXXXX</string>
-```
-4. For 2019.03 and later versions, manually add bidmad_assets.bundle to [Build Phases > Capy Bundle Resources] of Unity-iPhone target.
-5. Add the following libraries (Go to Target Build Setting → Build Phases and under the "Link Binary With Libraries," please add the following list of libraries) <br>
-- StoreKit.framework <br>
-- MobileCoreServices.framework <br>
-- WebKit.framework <br>
-- MediaPlayer.framework <br>
-- CoreMedia.framework <br>
-- AVFoundation.framework <br>
-- CoreTelephony.framework <br>
-- SystemConfiguration.framework <br>
-- AdSupport.framework <br>
-- CoreMotion.framework <br>
-- Accelerate.framework <br>
-- libresolv.9.tbd <br>
-- libc++.tbd <br>
-- libz.tbd <br>
-- libsqlite3.tbd <br>
-- libbz2.tbd <br>
-- libxml2.tbd <br>
-- libiconv.tbd <br>
-- libc++abi.tbd <br>
-- Security.framework <br>
-6. Follow the [guide](https://github.com/bidmad/Bidmad-Unity/wiki/Preparing-for-iOS-14%5BENG%5D) to apply app tracking transparency approval request pop-up and SKAdNetwork.
+1. 
+6. Follow the [guide](https://github.com/bidmad/Bidmad-Unity/wiki/Preparing-for-iOS-14%5BENG%5D) to apply app tracking transparency approval request pop-up.
 
 If you're looking for a guide to the privacy requirements of the Apple Store, [see here](https://github.com/bidmad/Bidmad-Unity/wiki/Apple-privacy-survey%5BENG%5D).
 
