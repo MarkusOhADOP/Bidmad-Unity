@@ -12,72 +12,339 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62606
+63852
 Successfully changed project path to: /Users/seungsuboh/Documents/GitHub/Bidmad-Unity-290Update/BidmadPluginSample
 /Users/seungsuboh/Documents/GitHub/Bidmad-Unity-290Update/BidmadPluginSample
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 23.61 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 25.31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/seungsuboh/Documents/GitHub/Bidmad-Unity-290Update/BidmadPluginSample/Assets
 GfxDevice: creating device client; threaded=0
-2021-08-24 15:58:26.427 Unity[30487:734854] VX3276-QHD preferred device: AMD Radeon Pro 5300M (high power)
-2021-08-24 15:58:26.427 Unity[30487:734854] Metal devices available: 2
-2021-08-24 15:58:26.427 Unity[30487:734854] 0: AMD Radeon Pro 5300M (high power)
-2021-08-24 15:58:26.427 Unity[30487:734854] 1: Intel(R) UHD Graphics 630 (low power)
-2021-08-24 15:58:26.427 Unity[30487:734854] Using device AMD Radeon Pro 5300M (high power)
+2021-08-24 16:13:04.472 Unity[32801:754196] VX3276-QHD preferred device: AMD Radeon Pro 5300M (high power)
+2021-08-24 16:13:04.472 Unity[32801:754196] Metal devices available: 2
+2021-08-24 16:13:04.472 Unity[32801:754196] 0: AMD Radeon Pro 5300M (high power)
+2021-08-24 16:13:04.472 Unity[32801:754196] 1: Intel(R) UHD Graphics 630 (low power)
+2021-08-24 16:13:04.472 Unity[32801:754196] Using device AMD Radeon Pro 5300M (high power)
 Initializing Metal device caps: AMD Radeon Pro 5300M
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56487
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56801
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000513 seconds.
+Registered in 0.002164 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 20.00 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 27.65 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.279 seconds
+- Completed reload, in  1.941 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001131 seconds.
+Registered in 0.005260 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.011 seconds
+- Completed reload, in  1.399 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1137 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1138 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 111.6 MB.
+System memory in use after: 111.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1582.
+Total: 3.029505 ms (FindLiveObjects: 0.338744 ms CreateObjectMapping: 0.090424 ms MarkObjects: 2.520405 ms  DeleteObjects: 0.078270 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Bidmad/Editor/BidmadDependencies.xml
+  artifactKey: Guid(12283f59a2a1443b5805d30b6342c417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Editor/BidmadDependencies.xml using Guid(12283f59a2a1443b5805d30b6342c417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af56aba9db3a7401609cdc0918c4b094') in 1.858578 seconds
+  Import took 1.860684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.565942 seconds.
+  path: Assets/Bidmad/Editor/BidmadDependencies.xml
+  artifactKey: Guid(12283f59a2a1443b5805d30b6342c417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Editor/BidmadDependencies.xml using Guid(12283f59a2a1443b5805d30b6342c417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4844b16fa869e451f776d8a397ad8f7e') in 0.007211 seconds
+  Import took 0.009334 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.3 MB.
+System memory in use after: 93.4 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1582.
+Total: 1.863553 ms (FindLiveObjects: 0.175865 ms CreateObjectMapping: 0.031840 ms MarkObjects: 1.643056 ms  DeleteObjects: 0.012026 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 221.230050 seconds.
+  path: Assets/Scenes/RewardInterstitial.unity
+  artifactKey: Guid(19f03af0bdd2f45299779814229f513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RewardInterstitial.unity using Guid(19f03af0bdd2f45299779814229f513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e95953a8aa904bb9f9bbb2d1bf9158') in 0.002059 seconds
+  Import took 0.004441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.685217 seconds.
+  path: Assets/Resources/Prefabs/RewardInterstitialAdPopupSample.prefab
+  artifactKey: Guid(40fab39660e5e470d8bafcb584b4b356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/RewardInterstitialAdPopupSample.prefab using Guid(40fab39660e5e470d8bafcb584b4b356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff19400a61e3ce2b9ec2a851d5075e20') in 1.183212 seconds
+  Import took 1.185774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.452731 seconds.
+  path: Assets/Scenes/Banner.unity
+  artifactKey: Guid(c0e0be054a7d6411092dca1660aa8c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Banner.unity using Guid(c0e0be054a7d6411092dca1660aa8c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548e46a35467f36b94ad1183d0317123') in 0.001436 seconds
+  Import took 0.003335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.042029 seconds.
+  path: Assets/Bidmad/Scripts/AdSample/RewardInterstitialAdSample.cs
+  artifactKey: Guid(9356ad3ad4a8e4eb2a7a4294bd75e107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Scripts/AdSample/RewardInterstitialAdSample.cs using Guid(9356ad3ad4a8e4eb2a7a4294bd75e107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37abf7f027a5821d09079f0feef658f') in 0.359914 seconds
+  Import took 0.361779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.355669 seconds.
+  path: Assets/Scenes/Interstitial.unity
+  artifactKey: Guid(973e137ced3044e1f9eab2f0728096de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Interstitial.unity using Guid(973e137ced3044e1f9eab2f0728096de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f06b62744e845aafc48db8beadb86b') in 0.001474 seconds
+  Import took 0.003749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.179960 seconds.
+  path: Assets/Plugins/iOS/Bidmad/BidmadUnityBridge.mm
+  artifactKey: Guid(983d368818e8f4d9486dcbba740c84b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/iOS/Bidmad/BidmadUnityBridge.mm using Guid(983d368818e8f4d9486dcbba740c84b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b568c9e24310b05c586e98fb4f479983') in 1.771463 seconds
+  Import took 1.773358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 457.196706 seconds.
+  path: Assets/Scenes/RewardInterstitialSettings.lighting
+  artifactKey: Guid(7728e936dedfe4a98b0627dae06a378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RewardInterstitialSettings.lighting using Guid(7728e936dedfe4a98b0627dae06a378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0dd88e29f07bfc6e8f965bc2774bdd9') in 0.332872 seconds
+  Import took 0.334845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.433055 seconds.
+  path: Assets/Scenes/RewardInterstitial.unity
+  artifactKey: Guid(19f03af0bdd2f45299779814229f513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RewardInterstitial.unity using Guid(19f03af0bdd2f45299779814229f513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291c86776dd7f5d0402f6dd47833b8c0') in 0.001331 seconds
+  Import took 0.003542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 184.936798 seconds.
+  path: Assets/Scenes/RewardInterstitial.unity
+  artifactKey: Guid(19f03af0bdd2f45299779814229f513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RewardInterstitial.unity using Guid(19f03af0bdd2f45299779814229f513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da7840dac7d0f41f6e4a5447f4bdd435') in 0.001542 seconds
+  Import took 0.003652 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 111.3 MB.
 System memory in use after: 111.4 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1580.
-Total: 2.223832 ms (FindLiveObjects: 0.204515 ms CreateObjectMapping: 0.057447 ms MarkObjects: 1.883580 ms  DeleteObjects: 0.077164 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1584.
+Total: 2.483635 ms (FindLiveObjects: 0.143928 ms CreateObjectMapping: 0.040528 ms MarkObjects: 2.274262 ms  DeleteObjects: 0.023213 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(0ab01d1508c534724bdd5dddcd126ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(0ab01d1508c534724bdd5dddcd126ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e54cb27b504d13ee16d453c74b120cc') in 0.003765 seconds
-  Import took 0.006477 seconds .
+  Time since last request: 301.648707 seconds.
+  path: Assets/Bidmad/Scripts/AdSample
+  artifactKey: Guid(6bedfc1dc2300482aa9c2e2cc141d96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Scripts/AdSample using Guid(6bedfc1dc2300482aa9c2e2cc141d96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7223a0bcdddf2ee568b20d01d7508f28') in 0.002402 seconds
+  Import took 0.004767 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.081211 seconds.
-  path: Assets/Scenes/Main.unity
-  artifactKey: Guid(3bca382ab9ee74cd0a3612794fd7f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main.unity using Guid(3bca382ab9ee74cd0a3612794fd7f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c234692786e087a30c9a15dc7ff5c98a') in 0.010254 seconds
-  Import took 0.012490 seconds .
+  Time since last request: 0.707221 seconds.
+  path: Assets/Bidmad/Scripts/ButtonEvent.cs
+  artifactKey: Guid(dac7437911eee4d0f8b7810e0b211c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Scripts/ButtonEvent.cs using Guid(dac7437911eee4d0f8b7810e0b211c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7660e600c2284a19500d8bf026f81fce') in 0.004756 seconds
+  Import took 0.006934 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 0.679319 seconds.
+  path: Assets/Bidmad/Scripts/Bidmad
+  artifactKey: Guid(d093a386011194c4fbf4662b6ff44d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Scripts/Bidmad using Guid(d093a386011194c4fbf4662b6ff44d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80c525834dbfa2ccf7b50e32f11b55b') in 0.001723 seconds
+  Import took 0.003828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.178107 seconds.
+  path: Assets/Bidmad/Scripts/AdSample/RewardInterstitialAdPopupSample.cs
+  artifactKey: Guid(319296d691c81406cae682182b7d5e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Scripts/AdSample/RewardInterstitialAdPopupSample.cs using Guid(319296d691c81406cae682182b7d5e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a915693332f1e3b9b45bcc79741607') in 0.003978 seconds
+  Import took 0.005983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.462466 seconds.
+  path: Assets/Bidmad/Scripts
+  artifactKey: Guid(7be1d8fda6dc54f5bbbd03f2a173fabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Scripts using Guid(7be1d8fda6dc54f5bbbd03f2a173fabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a787b9891800cbe2caaaf3b70d891146') in 0.001665 seconds
+  Import took 0.003964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.197881 seconds.
+  path: Assets/Bidmad/Editor/BidmadPostProcessBuild.cs
+  artifactKey: Guid(71f91ad9c1bc7404c824ac270be90207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Editor/BidmadPostProcessBuild.cs using Guid(71f91ad9c1bc7404c824ac270be90207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7aecec4dbf3068ea128d31f191dc28') in 0.004709 seconds
+  Import took 0.007155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/Bidmad/Editor/BidmadPostProcessBuild.cs
+  artifactKey: Guid(71f91ad9c1bc7404c824ac270be90207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Editor/BidmadPostProcessBuild.cs using Guid(71f91ad9c1bc7404c824ac270be90207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7aecec4dbf3068ea128d31f191dc28') in 0.003991 seconds
+  Import took 0.006181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.798239 seconds.
+  path: Assets/Bidmad/Scripts/gameobject.cs
+  artifactKey: Guid(e55353f93a0ae48079fc2fa519fc6b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bidmad/Scripts/gameobject.cs using Guid(e55353f93a0ae48079fc2fa519fc6b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87ab40125ea1f3a19c3618c3d76bdfe') in 0.004344 seconds
+  Import took 0.006349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.579695 seconds.
+  path: Assets/PlayServicesResolver
+  artifactKey: Guid(85ca647c0f581443d909ea926515f0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayServicesResolver using Guid(85ca647c0f581443d909ea926515f0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fdf8a76e636b68ac0f2415ec06fe82b') in 0.002130 seconds
+  Import took 0.004359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.095760 seconds.
+  path: Assets/PlayServicesResolver/Editor
+  artifactKey: Guid(fff5742dad03a46c59f1719a1c7bc4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayServicesResolver/Editor using Guid(fff5742dad03a46c59f1719a1c7bc4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a191c5c4b3a4d6b9818e2ebd69815b0') in 0.001863 seconds
+  Import took 0.004117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.918002 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(f08326adffc604bd7843ec1d10467f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(f08326adffc604bd7843ec1d10467f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73909956f8f71759045993867e11fa71') in 0.001176 seconds
+  Import took 0.003233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.174026 seconds.
+  path: Assets/Plugins/Android
+  artifactKey: Guid(be5a579d6d65a4aceac8418a00ae8539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Android using Guid(be5a579d6d65a4aceac8418a00ae8539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0a3f36d96315de303b30c9b8d5732d') in 0.001220 seconds
+  Import took 0.003296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.334111 seconds.
+  path: Assets/Plugins/Android/bidmad
+  artifactKey: Guid(e11aa3727f99f478b8772bf913a79042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Android/bidmad using Guid(e11aa3727f99f478b8772bf913a79042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fddc29efcbae5685d7d331e461d139de') in 0.001589 seconds
+  Import took 0.003808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.029345 seconds.
+  path: Assets/Plugins/iOS
+  artifactKey: Guid(b134b6b6d2c674540a97e623dfd0afeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/iOS using Guid(b134b6b6d2c674540a97e623dfd0afeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470f1e8a7f662adb9131f9d8d451e238') in 0.001500 seconds
+  Import took 0.003288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.176685 seconds.
+  path: Assets/Plugins/iOS/Bidmad
+  artifactKey: Guid(9684db144d80640b7962ff1e7c2a55ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/iOS/Bidmad using Guid(9684db144d80640b7962ff1e7c2a55ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680044747263b7e445fa0446319489af') in 0.001085 seconds
+  Import took 0.003249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.192537 seconds.
+  path: Assets/Plugins/iOS/Bidmad/BidmadUnityBridge.h
+  artifactKey: Guid(0b77558d8a61248bc904dd4f8602f7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/iOS/Bidmad/BidmadUnityBridge.h using Guid(0b77558d8a61248bc904dd4f8602f7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66c1a94def54adfc6007f2043fc0363') in 1.733113 seconds
+  Import took 1.735281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(a5e284914f34143e2949c4924498cacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(a5e284914f34143e2949c4924498cacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56325841ef5faf87971e911da4ff3a97') in 0.001748 seconds
+  Import took 0.003516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/Prefabs
+  artifactKey: Guid(4df94e8b5fc274580a5c92d360ff377f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs using Guid(4df94e8b5fc274580a5c92d360ff377f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa8f612c9110e883fd84691640cf7ee') in 0.001488 seconds
+  Import took 0.002969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Plugins/iOS/Bidmad/SwiftEnabler.swift
+  artifactKey: Guid(720f579c5b9dc4730a9a7cc5cbf5c4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/iOS/Bidmad/SwiftEnabler.swift using Guid(720f579c5b9dc4730a9a7cc5cbf5c4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f85e593c71e08bef9fe533ae0efd8c8') in 1.729683 seconds
+  Import took 1.731515 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.99 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 120.0 MB.
+System memory in use after: 120.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1584.
+Total: 2.986852 ms (FindLiveObjects: 0.284694 ms CreateObjectMapping: 0.053590 ms MarkObjects: 2.630884 ms  DeleteObjects: 0.016141 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 120.1 MB.
+System memory in use after: 120.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1584.
+Total: 2.055872 ms (FindLiveObjects: 0.147934 ms CreateObjectMapping: 0.035875 ms MarkObjects: 1.856529 ms  DeleteObjects: 0.014731 ms)
+
