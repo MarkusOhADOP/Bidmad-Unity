@@ -144,7 +144,7 @@ apply from: "${getRootDir()}/../../Assets/Plugins/Android/bidmad/bidmad.gradle" 
     }
 ```
 
-#### 2.4 보상형 전면
+#### 2.4 Reward Interstitial
 
 Reward Interstitial is a new reward-type advertising format that can provide rewarded ads when switching between pages in an app.
 Unlike Reward ads, users can view Reward Interstitial ads without user's consent. However, the developer needs to provide a screen announcing that there will be a reward for watching an ad and the user can cancel watching the ad if he/she wants. (Please check the BidmadSDK sample app)
